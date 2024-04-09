@@ -12,7 +12,7 @@ Importing the Dependencies
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import seaborn as sns
 import cv2
 from google.colab.patches import cv2_imshow
@@ -49,8 +49,8 @@ print(X_train[10].shape)
 
 # displaying the image
 
-plt.imshow(X_train[25])
-plt.show()
+# plt.imshow(X_train[25])
+# plt.show()
 
 # print the corresponding label
 print(Y_train[25])
@@ -112,9 +112,9 @@ print(accuracy)
 
 print(X_test.shape)
 
-# first data point in X_test
-plt.imshow(X_test[0])
-plt.show()
+# # first data point in X_test
+# plt.imshow(X_test[0])
+# plt.show()
 
 print(Y_test[0])
 
@@ -148,8 +148,8 @@ print(conf_mat)
 
 plt.figure(figsize=(15,7))
 sns.heatmap(conf_mat, annot=True, fmt='d', cmap='Blues')
-plt.ylabel('True Labels')
-plt.xlabel('Predicted Labels')
+# plt.ylabel('True Labels')
+# plt.xlabel('Predicted Labels')
 
 """Building a Predictive System
 
